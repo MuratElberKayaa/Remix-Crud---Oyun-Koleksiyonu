@@ -53,8 +53,6 @@ Repo: [github.com/MuratElberKayaa/Remix-Crud---Oyun-Koleksiyonu](https://github.
 3. Build ayarları `netlify.toml` ile otomatik gelir: Build command: `npm run build`, Publish directory: `build/client`.
 4. **Deploy site** ile yayına alın; canlı link **Site overview** veya **Domain management**’ta görünür.
 
-Detaylı adımlar: **[NETLIFY_KURULUM.md](NETLIFY_KURULUM.md)**
-
 ## Lisans
 
 Eğitim projesi – serbest kullanım.
