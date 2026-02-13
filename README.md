@@ -46,6 +46,15 @@ npm run build
 
 Repo: [github.com/MuratElberKayaa/Remix-Crud---Oyun-Koleksiyonu](https://github.com/MuratElberKayaa/Remix-Crud---Oyun-Koleksiyonu)
 
+## Netlify’a bağlama
+
+1. [netlify.com](https://www.netlify.com) → **Sign up / Log in** (GitHub ile giriş önerilir).
+2. **Add new site** → **Import an existing project** → **GitHub** → **Remix-Crud---Oyun-Koleksiyonu** repo’sunu seçin.
+3. Build ayarları `netlify.toml` ile otomatik gelir: Build command: `npm run build`, Publish directory: `build/client`.
+4. **Deploy site** ile yayına alın; canlı link **Site overview** veya **Domain management**’ta görünür.
+
+Detaylı adımlar: **[NETLIFY_KURULUM.md](NETLIFY_KURULUM.md)**
+
 ## Lisans
 
 Eğitim projesi – serbest kullanım.
