@@ -1,0 +1,181 @@
+/* Oyun konsepti – mavi tonlarında tema */
+
+:root {
+  --game-blue: #1e3a5f;
+  --game-blue-light: #2d5a87;
+  --game-blue-bright: #3d7ab5;
+  --game-blue-soft: #5b9bd5;
+  --game-blue-pale: #a8d4f0;
+  --game-bg: #0f1c2e;
+  --game-bg-card: #162536;
+  --game-bg-page: linear-gradient(160deg, #0f1c2e 0%, #1a2d47 50%, #152536 100%);
+  --game-text: #e8eef4;
+  --game-text-muted: #8ba3b8;
+  --game-border: rgba(93, 155, 213, 0.25);
+}
+
+body.game-theme {
+  background: var(--game-bg-page);
+  min-height: 100vh;
+  color: var(--game-text);
+}
+
+.game-page {
+  min-height: 100vh;
+}
+
+.game-header {
+  color: var(--game-text);
+}
+
+.game-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--game-blue-pale);
+  text-shadow: 0 0 20px rgba(61, 122, 181, 0.3);
+}
+
+.game-subtitle {
+  color: var(--game-text-muted);
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* Kartlar */
+.game-card {
+  background: var(--game-bg-card);
+  border: 1px solid var(--game-border);
+  color: var(--game-text);
+}
+
+.game-card-title {
+  color: var(--game-blue-pale);
+  font-weight: 600;
+}
+
+/* İstatistik kartı */
+body.game-theme .card {
+  background: var(--game-bg-card);
+  border: 1px solid var(--game-border);
+  color: var(--game-text);
+}
+
+body.game-theme .card .text-primary {
+  color: var(--game-blue-soft) !important;
+}
+
+body.game-theme .card .text-muted {
+  color: var(--game-text-muted) !important;
+}
+
+/* Butonlar */
+.btn-game-primary {
+  background: var(--game-blue-bright);
+  border-color: var(--game-blue-light);
+  color: #fff;
+}
+
+.btn-game-primary:hover {
+  background: var(--game-blue-light);
+  border-color: var(--game-blue);
+  color: #fff;
+}
+
+.btn-game-outline {
+  color: var(--game-blue-soft);
+  border-color: var(--game-blue-soft);
+}
+
+.btn-game-outline:hover {
+  background: rgba(61, 122, 181, 0.2);
+  color: var(--game-blue-pale);
+  border-color: var(--game-blue-pale);
+}
+
+.btn-game-reset {
+  background: transparent;
+  border: 1px solid var(--game-border);
+  color: var(--game-text-muted);
+}
+
+.btn-game-reset:hover {
+  background: rgba(45, 90, 135, 0.3);
+  border-color: var(--game-blue-soft);
+  color: var(--game-blue-pale);
+}
+
+/* Form kontrolleri */
+body.game-theme .form-control,
+body.game-theme .form-select {
+  background: rgba(15, 28, 46, 0.6);
+  border: 1px solid var(--game-border);
+  color: var(--game-text);
+}
+
+body.game-theme .form-control::placeholder {
+  color: var(--game-text-muted);
+}
+
+body.game-theme .form-control:focus,
+body.game-theme .form-select:focus {
+  background: var(--game-bg-card);
+  border-color: var(--game-blue-soft);
+  color: var(--game-text);
+  box-shadow: 0 0 0 0.2rem rgba(61, 122, 181, 0.25);
+}
+
+body.game-theme .form-label {
+  color: var(--game-text-muted);
+}
+
+/* Tablo */
+.game-table {
+  color: var(--game-text);
+}
+
+.game-table thead th {
+  background: var(--game-blue);
+  border-color: var(--game-border);
+  color: var(--game-blue-pale);
+  font-weight: 600;
+}
+
+.game-table tbody tr {
+  border-color: var(--game-border);
+}
+
+.game-table tbody tr:hover {
+  background: rgba(45, 90, 135, 0.15);
+}
+
+.game-row td {
+  border-color: var(--game-border);
+  vertical-align: middle;
+}
+
+.game-empty-text {
+  color: var(--game-text-muted);
+}
+
+/* Bootstrap outline secondary (İptal) */
+body.game-theme .btn-outline-secondary {
+  border-color: var(--game-text-muted);
+  color: var(--game-text-muted);
+}
+
+body.game-theme .btn-outline-secondary:hover {
+  background: rgba(139, 163, 184, 0.2);
+  color: var(--game-text);
+  border-color: var(--game-text-muted);
+}
+
+body.game-theme .btn-outline-danger {
+  border-color: #c45c5c;
+  color: #e88a8a;
+}
+
+body.game-theme .btn-outline-danger:hover {
+  background: rgba(196, 92, 92, 0.2);
+  color: #ffa8a8;
+  border-color: #e88a8a;
+}
