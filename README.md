@@ -1,29 +1,29 @@
-# Remix CRUD – Kitap Kütüphanesi
+# Remix CRUD – Oyun Koleksiyonu
 
-[dnm11remix.netlify.app](https://dnm11remix.netlify.app/) benzeri, özgün bir **Remix** CRUD uygulaması. Kitap ekleme, listeleme, güncelleme ve silme (CRUD) işlemleri yapılır; veriler tarayıcıda **localStorage** ile saklanır.
+Video oyunu ekleme, listeleme, güncelleme ve silme (CRUD) uygulaması. Remix + Netlify. Veriler tarayıcıda **localStorage** ile saklanır.
 
 ## Proje yapısı
 
-- **app/Components** – StatCard, KitapForm, KitapList, KitapRow
-- **app/Pages** – KitapPage (ana sayfa, state + localStorage)
-- **app/Interfaces** – Kitap tipi ve `createKitap` helper
+- **app/Components** – StatCard, OyunForm, OyunList, OyunRow
+- **app/Pages** – OyunPage (ana sayfa, state + localStorage)
+- **app/Interfaces** – Oyun tipi, KATEGORI_SECENEKLERI (Aksiyon, Korku, RPG, vb.)
 - **app/routes** – Remix route’ları (`_index.tsx`)
 
 ## Kullanılan teknolojiler
 
 - Remix (React Router) v2
 - TypeScript
-- Bootstrap 5 (CDN)
+- Bootstrap 5 (CDN) + özel mavi oyun teması
 - Netlify (deploy)
 
 ## CRUD işlemleri
 
-| İşlem    | Açıklama |
-|----------|----------|
-| **Ekle** | Form ile yeni kitap (ad, yazar, yıl, kategori) |
-| **Listele** | Tüm kitaplar tabloda listelenir |
-| **Güncelle** | Satırdaki "Düzenle" ile formda düzenleyip "Güncelle" |
-| **Sil** | "Sil" butonu ile kayıt silinir (onay ile) |
+| İşlem | Açıklama |
+|-------|----------|
+| **Ekle** | Form ile yeni oyun (oyun adı, yapımcı, yıl, kategori) |
+| **Listele** | Tüm oyunlar tabloda listelenir |
+| **Güncelle** | "Düzenle" → formda düzenle → "Güncelle" |
+| **Sil** | "Sil" butonu (onay ile) |
 
 ## Kurulum ve çalıştırma
 
@@ -40,19 +40,11 @@ Tarayıcıda: http://localhost:5173
 npm run build
 ```
 
-- Çıktı: `build/client` (Netlify bu klasörü yayınlar).
-- Repo’yu Netlify’a bağlayıp otomatik deploy kullanabilirsiniz; `netlify.toml` zaten yapılandırıldı.
+- Çıktı: `build/client`. Netlify’da Build command: `npm run build`, Publish directory: `build/client`.
 
-## Ekran görüntüsü
+## GitHub
 
-Proje çalıştıktan sonra bir ekran görüntüsü alıp **screenshots/** klasörüne ekleyin (gereklilik: en az 1 adet).
-
-## GitHub ve Netlify (teslim)
-
-1. **GitHub:** Yeni public repo oluşturun; bu klasörün içeriğini push edin. Teslim formuna repo linkini yazın.
-2. **Netlify:** [app.netlify.com](https://app.netlify.com) → Add new site → Import from Git → Bu repo. Build: `npm run build`, Publish: `build/client`. Teslim formuna site linkini yazın.
-
-Tüm gereksinimlerin listesi için **GEREKLILIKLER.md** dosyasına bakın.
+Repo: [github.com/MuratElberKayaa/Remix-Crud---Oyun-Koleksiyonu](https://github.com/MuratElberKayaa/Remix-Crud---Oyun-Koleksiyonu)
 
 ## Lisans
 
